@@ -24,8 +24,6 @@ Learn more about Ubuntu: <https://ubuntu.com/>
 
 -   [`alvistack/devel-22.04`](https://hub.docker.com/r/alvistack/devel-22.04)
     -   [`packer/docker-22.04/packer.json`](https://github.com/alvistack/docker-devel/blob/master/packer/docker-22.04/packer.json)
--   [`alvistack/devel-20.04`](https://hub.docker.com/r/alvistack/devel-20.04)
-    -   [`packer/docker-20.04/packer.json`](https://github.com/alvistack/docker-devel/blob/master/packer/docker-20.04/packer.json)
 
 ## Overview
 
