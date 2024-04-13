@@ -9,7 +9,7 @@ tag](https://img.shields.io/github/tag/alvistack/docker-devel.svg)](https://gith
 [![GitHub
 license](https://img.shields.io/github/license/alvistack/docker-devel.svg)](https://github.com/alvistack/docker-devel/blob/master/LICENSE)
 [![Docker
-Pulls](https://img.shields.io/docker/pulls/alvistack/devel-22.04.svg)](https://hub.docker.com/r/alvistack/devel-22.04)
+Pulls](https://img.shields.io/docker/pulls/alvistack/devel-24.04.svg)](https://hub.docker.com/r/alvistack/devel-24.04)
 
 Ubuntu is a Debian-based Linux operating system that runs from the
 desktop to the cloud, to all your internet connected things. It is the
@@ -22,6 +22,8 @@ Learn more about Ubuntu: <https://ubuntu.com/>
 
 ## Supported Tags and Respective Packer Template Links
 
+-   [`alvistack/devel-24.04`](https://hub.docker.com/r/alvistack/devel-24.04)
+    -   [`packer/docker-24.04/packer.json`](https://github.com/alvistack/docker-devel/blob/master/packer/docker-24.04/packer.json)
 -   [`alvistack/devel-22.04`](https://hub.docker.com/r/alvistack/devel-22.04)
     -   [`packer/docker-22.04/packer.json`](https://github.com/alvistack/docker-devel/blob/master/packer/docker-22.04/packer.json)
 
@@ -44,14 +46,14 @@ Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 Start SSHD:
 
     # Pull latest image
-    docker pull alvistack/devel-22.04
+    docker pull alvistack/devel-24.04
 
     # Run as detach
     docker run \
         -itd \
         --name devel \
         --publish 2222:22 \
-        alvistack/devel-22.04
+        alvistack/devel-24.04
 
 **Success**. SSHD is now available on port `2222`.
 
