@@ -156,9 +156,7 @@
       ansible.builtin.include_role:
         name: packer
 
-    - name: sudo -u vagrant packer plugins install
-      become: true
-      become_user: vagrant
+    - name: packer plugins install
       environment:
         PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
       ansible.builtin.shell:
@@ -229,9 +227,7 @@
         - { name: vagrant, groups: kvm }
         - { name: vagrant, groups: libvirt }
 
-    - name: sudo -u vagrant vagrant plugin install vagrant-libvirt
-      become: true
-      become_user: vagrant
+    - name: vagrant plugin install vagrant-libvirt
       environment:
         PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
       ansible.builtin.shell:
